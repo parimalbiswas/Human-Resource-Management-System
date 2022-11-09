@@ -43,7 +43,6 @@ public class AdminVerificationDone
 
 		case 4:
 			System.out.println("You Pressed 4....");
-			// RequestLeave_usecase_EMP.RequestLeave_usecaseX(employee);
 			RegisterNewEmployee_usecase_ADMIN.RegisterNewEmployee_usecaseX();
 			break;
 
@@ -54,7 +53,7 @@ public class AdminVerificationDone
 
 		case 6:
 			System.out.println("You Pressed 6....");
-			// RequestLeave_usecase_EMP.RequestLeave_usecaseX(employee);
+			LeaveApproval_usecase_ADMIN.leaveApproval_usecaseX();
 			break;
 
 		case 7:
