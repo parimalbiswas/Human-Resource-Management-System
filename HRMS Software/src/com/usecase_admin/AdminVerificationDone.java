@@ -38,7 +38,7 @@ public class AdminVerificationDone
 
 		case 3:
 			System.out.println("You Pressed 3....");
-			// updatePassword_usecase_EMP.updatePassword_usecaseX(employee);
+			UpdateDepartment_usecase_ADMIN.updateDepartment_usecaseX();
 			break;
 
 		case 4:
