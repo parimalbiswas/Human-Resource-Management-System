@@ -48,7 +48,9 @@ public class ViewProfile_usecase_EMP
 			}
 			else
 			{
-				System.out.println("Worng Choise");
+				System.out.println("Worng Choise ><><><><><>");
+				System.out.println("--------------------------");
+				viewProfile_usecaseX(employee);
 			}
 
 		}

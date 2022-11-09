@@ -33,7 +33,8 @@ public class UserVerificationDone
 			UpdateProfile_usecase_EMP.updateProfile_usecaseX(employee);
 			break;
 		case 3:
-			System.out.println("Worng 3....");
+			System.out.println("You Pressed 3....");
+			updatePassword_usecase_EMP.updatePassword_usecaseX(employee);
 			break;
 		case 4:
 			System.out.println("Worng 4....");
