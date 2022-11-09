@@ -6,8 +6,8 @@ import com.dao.EmployeeDao;
 import com.dao.EmployeeDaoImpl;
 import com.exception.EmployeeException;
 import com.model.Employee;
-import com.usecase.AdminVerificationDone;
-import com.usecase.UserVerificationDone;
+import com.usecase_emp.AdminVerificationDone;
+import com.usecase_emp.UserVerificationDone;
 
 public class WelcomeScreen
 {

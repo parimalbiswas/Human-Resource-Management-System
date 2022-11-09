@@ -1,4 +1,4 @@
-package com.usecase;
+package com.usecase_emp;
 
 import java.util.Scanner;
 
