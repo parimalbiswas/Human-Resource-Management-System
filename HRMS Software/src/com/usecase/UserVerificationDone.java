@@ -16,7 +16,7 @@ public class UserVerificationDone
 
 		System.out.println("1. Press 1 to view Profile ");
 		System.out.println("2. Press 2 to update Profile ");
-		System.out.println("3. Press 3 to update Passworde ");
+		System.out.println("3. Press 3 to update Password ");
 		System.out.println("4. Press 4 to request Leave ");
 		System.out.println("5. Press 5 to exit ");
 		System.out.println("------------------------------------");

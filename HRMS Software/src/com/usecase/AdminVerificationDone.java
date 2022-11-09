@@ -28,7 +28,7 @@ public class AdminVerificationDone
 		switch (choise) {
 		case 1:
 			System.out.println("You Pressed 1....");
-			RegisterNewEmployee_usecase_ADMIN.RegisterNewEmployee_usecaseX();
+
 			break;
 
 		case 2:
@@ -44,6 +44,7 @@ public class AdminVerificationDone
 		case 4:
 			System.out.println("You Pressed 4....");
 			// RequestLeave_usecase_EMP.RequestLeave_usecaseX(employee);
+			RegisterNewEmployee_usecase_ADMIN.RegisterNewEmployee_usecaseX();
 			break;
 
 		case 5:
