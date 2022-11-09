@@ -37,7 +37,8 @@ public class UserVerificationDone
 			updatePassword_usecase_EMP.updatePassword_usecaseX(employee);
 			break;
 		case 4:
-			System.out.println("Worng 4....");
+			System.out.println("You Pressed 4....");
+			RequestLeave_usecase_EMP.RequestLeave_usecaseX(employee);
 			break;
 		case 5:
 			WelcomeScreen.control();

@@ -6,6 +6,7 @@ import com.dao.EmployeeDao;
 import com.dao.EmployeeDaoImpl;
 import com.exception.EmployeeException;
 import com.model.Employee;
+import com.usecase.AdminVerificationDone;
 import com.usecase.UserVerificationDone;
 
 public class WelcomeScreen
@@ -28,6 +29,23 @@ public class WelcomeScreen
 
 		if (choise == 1)
 		{
+			System.out.println("Enter Employee Name");
+			String username = scanner.next();
+
+			System.out.println("Enter Password");
+			String password = scanner.next();
+
+			if (username.equalsIgnoreCase("ADMIN") && password.equalsIgnoreCase("ADMIN"))
+			{
+				AdminVerificationDone.verifiedAdminAcivity();
+			}
+			else
+			{
+				System.out.println("><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><");
+				System.out.println(" ><><><>< Invaild credentials !!!! Worng Username or Password !!! ><><><><");
+				System.out.println("><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><");
+				control();
+			}
 
 		}
 		else if (choise == 2)
@@ -49,8 +67,7 @@ public class WelcomeScreen
 				else
 				{
 					System.out.println("><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><");
-					System.out.println(
-							" ><><><><><>< Invaild credentials !!!! Worng Username or Password !!!!!   ><><><><><><");
+					System.out.println(" ><><><>< Invaild credentials !!!! Worng Username or Password !!! ><><><><");
 					System.out.println("><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><");
 					control();
 				}
