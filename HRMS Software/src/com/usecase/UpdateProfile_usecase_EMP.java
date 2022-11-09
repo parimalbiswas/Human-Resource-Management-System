@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 import com.welcomScreen.WelcomeScreen;
 
-public class EMPviewProfile
+public class UpdateProfile_usecase_EMP
 {
 
-	public static void EMPviewProfileX()
+	public static void updateProfile_usecaseX()
 	{
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("If You want to view your Profile Enter CORRECT EID");

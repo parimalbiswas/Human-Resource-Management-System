@@ -5,6 +5,7 @@ import java.util.Scanner;
 import com.dao.EmployeeDao;
 import com.dao.EmployeeDaoImpl;
 import com.exception.EmployeeException;
+import com.model.Employee;
 import com.usecase.UserVerificationDone;
 
 public class WelcomeScreen
@@ -40,10 +41,10 @@ public class WelcomeScreen
 			EmployeeDao dao = new EmployeeDaoImpl();
 			try
 			{
-				Boolean yesno = dao.validateUser(ename, password);
-				if (yesno == true)
+				Employee employee = dao.validateUser(ename, password);
+				if (employee != null) // employee.getEid() != 0 ||
 				{
-					UserVerificationDone.verifieduserAcivity();
+					UserVerificationDone.verifieduserAcivity(employee);
 				}
 				else
 				{

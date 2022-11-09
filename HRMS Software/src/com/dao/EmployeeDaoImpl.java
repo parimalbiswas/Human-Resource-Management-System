@@ -19,7 +19,7 @@ public class EmployeeDaoImpl implements EmployeeDao
 
 		try (Connection conn1 = DBUtil.provideConnection())
 		{
-			PreparedStatement ps1 = conn1.prepareStatement("select * from employee where empid = ?");
+			PreparedStatement ps1 = conn1.prepareStatement("select * from employee where eid = ?");
 			ps1.setInt(1, empid);
 			ResultSet rs1 = ps1.executeQuery();
 
@@ -144,9 +144,9 @@ public class EmployeeDaoImpl implements EmployeeDao
 	}
 
 	@Override
-	public boolean validateUser(String ename, String password) throws EmployeeException
+	public Employee validateUser(String ename, String password) throws EmployeeException
 	{
-		boolean truefalse = false;
+		Employee employee = null;
 
 		try (Connection conn1 = DBUtil.provideConnection())
 		{
@@ -155,9 +155,17 @@ public class EmployeeDaoImpl implements EmployeeDao
 			ps1.setString(2, password);
 			ResultSet rSet1 = ps1.executeQuery();
 
-			if (rSet1.next())
+			while (rSet1.next())
 			{
-				truefalse = true;
+				int eid1 = rSet1.getInt(1);
+				String ename1 = rSet1.getString(2);
+				String address1 = rSet1.getString(4);
+				String mobile1 = rSet1.getString(3);
+				String password1 = rSet1.getString(5);
+				String dname1 = rSet1.getString(6);
+
+				employee = new Employee(eid1, ename1, address1, mobile1, password1, dname1);
+
 			}
 		}
 		catch (SQLException e)
@@ -166,7 +174,7 @@ public class EmployeeDaoImpl implements EmployeeDao
 			throw new EmployeeException(e.getMessage());
 		}
 
-		return truefalse;
+		return employee;
 	}
 
 }

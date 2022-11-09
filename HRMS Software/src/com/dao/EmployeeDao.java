@@ -14,6 +14,6 @@ public interface EmployeeDao
 
 	public String requestLeave(int empid, String dateofleave) throws EmployeeException;
 
-	public boolean validateUser(String ename, String password) throws EmployeeException;
+	public Employee validateUser(String ename, String password) throws EmployeeException;
 
 }
