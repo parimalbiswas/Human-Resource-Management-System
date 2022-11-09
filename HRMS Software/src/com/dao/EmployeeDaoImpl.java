@@ -28,7 +28,7 @@ public class EmployeeDaoImpl implements EmployeeDao
 				int eid = rs1.getInt(1);
 				String ename = rs1.getString(2);
 				String address = rs1.getString(3);
-				int mobile = rs1.getInt(4);
+				String mobile = rs1.getString(4);
 				String password = rs1.getString(5);
 				String dname = rs1.getString(6);
 
@@ -46,10 +46,127 @@ public class EmployeeDaoImpl implements EmployeeDao
 	}
 
 	@Override
-	public String updateProfile(int empid) throws EmployeeException
+	public String updateProfile(Employee employee) throws EmployeeException
 	{
-		// TODO Auto-generated method stub
-		return null;
+		String message = "Not Updated";
+
+		try (Connection conn1 = DBUtil.provideConnection())
+		{
+			PreparedStatement ps1 = conn1
+					.prepareStatement("update employee set ename=?,address=?,mobile=? where eid=?");
+			ps1.setString(1, employee.getEname());
+			ps1.setString(2, employee.getAddress());
+			ps1.setString(3, employee.getMobile());
+			ps1.setInt(4, employee.getEid());
+			int x = ps1.executeUpdate();
+
+			if (x > 0)
+			{
+				message = "Updated Successfully.......";
+			}
+			else
+			{
+				throw new EmployeeException("Updated Failed !!!!!!!!!!!!");
+			}
+
+		}
+		catch (SQLException e)
+		{
+			e.printStackTrace();
+			throw new EmployeeException(e.getMessage());
+
+		}
+
+		return message;
+	}
+
+	@Override
+	public String updatePassword(int empid, String password) throws EmployeeException
+	{
+		String message = "Not Updated";
+
+		try (Connection conn1 = DBUtil.provideConnection())
+		{
+			PreparedStatement ps1 = conn1.prepareStatement("update employee set password=? where eid=?");
+			ps1.setString(1, password);
+			ps1.setInt(2, empid);
+			int x = ps1.executeUpdate();
+
+			if (x > 0)
+			{
+				message = "Password Updated Succesfully........";
+			}
+			else
+			{
+				throw new EmployeeException("Updated Failed !!!!!!!!!!!!");
+			}
+
+		}
+		catch (SQLException e)
+		{
+			e.printStackTrace();
+			throw new EmployeeException(e.getMessage());
+		}
+
+		return message;
+	}
+
+	@Override
+	public String requestLeave(int empid, String dateofleave) throws EmployeeException
+	{
+		String message = "Not applied";
+
+		try (Connection conn1 = DBUtil.provideConnection())
+		{
+			PreparedStatement ps1 = conn1.prepareStatement("insert into leaveDetail values(?,?,?)");
+			ps1.setInt(1, empid);
+			ps1.setString(2, dateofleave);
+			ps1.setString(3, "Not Approved");
+			int x = ps1.executeUpdate();
+
+			if (x > 0)
+			{
+				message = "Leave Application Requested.........";
+			}
+			else
+			{
+				throw new EmployeeException("Application failed !!!!!!!!!");
+			}
+
+		}
+		catch (SQLException e)
+		{
+			e.printStackTrace();
+			throw new EmployeeException(e.getMessage());
+		}
+
+		return message;
+	}
+
+	@Override
+	public boolean validateUser(String ename, String password) throws EmployeeException
+	{
+		boolean truefalse = false;
+
+		try (Connection conn1 = DBUtil.provideConnection())
+		{
+			PreparedStatement ps1 = conn1.prepareStatement("select * from employee where ename = ? AND password = ?");
+			ps1.setString(1, ename);
+			ps1.setString(2, password);
+			ResultSet rSet1 = ps1.executeQuery();
+
+			if (rSet1.next())
+			{
+				truefalse = true;
+			}
+		}
+		catch (SQLException e)
+		{
+			e.printStackTrace();
+			throw new EmployeeException(e.getMessage());
+		}
+
+		return truefalse;
 	}
 
 }

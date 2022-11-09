@@ -5,11 +5,11 @@ public class Employee
 	int eid;
 	String ename;
 	String address;
-	int mobile;
+	String mobile;
 	String password;
 	String dname;
 
-	public Employee(int eid, String ename, String address, int mobile, String password, String dname)
+	public Employee(int eid, String ename, String address, String mobile, String password, String dname)
 	{
 		super();
 		this.eid = eid;
@@ -18,6 +18,15 @@ public class Employee
 		this.mobile = mobile;
 		this.password = password;
 		this.dname = dname;
+	}
+
+	public Employee(String ename, String address, String mobile)
+	{
+		super();
+		this.ename = ename;
+		this.address = address;
+		this.mobile = mobile;
+
 	}
 
 	public Employee()
@@ -55,12 +64,12 @@ public class Employee
 		this.address = address;
 	}
 
-	public int getMobile()
+	public String getMobile()
 	{
 		return mobile;
 	}
 
-	public void setMobile(int mobile)
+	public void setMobile(String mobile)
 	{
 		this.mobile = mobile;
 	}
