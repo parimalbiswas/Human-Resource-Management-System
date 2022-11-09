@@ -33,7 +33,7 @@ public class AdminVerificationDone
 
 		case 2:
 			System.out.println("You Pressed 2....");
-			// UpdateProfile_usecase_EMP.updateProfile_usecaseX(employee);
+			ViewAllDepartMent_usecase_ADMIN.viewAllDepartMent_usecaseX();
 			break;
 
 		case 3:
