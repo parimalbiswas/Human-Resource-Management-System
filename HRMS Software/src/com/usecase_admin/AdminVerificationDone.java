@@ -28,7 +28,7 @@ public class AdminVerificationDone
 		switch (choise) {
 		case 1:
 			System.out.println("You Pressed 1....");
-
+			AddNewDepartMent_usecase_ADMIN.addNewDepartMent_usecaseX();
 			break;
 
 		case 2:
