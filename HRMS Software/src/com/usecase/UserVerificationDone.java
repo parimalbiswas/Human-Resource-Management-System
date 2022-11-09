@@ -29,7 +29,8 @@ public class UserVerificationDone
 			break;
 
 		case 2:
-			System.out.println("Worng 2....");
+			System.out.println("You Pressed 2....");
+			UpdateProfile_usecase_EMP.updateProfile_usecaseX(employee);
 			break;
 		case 3:
 			System.out.println("Worng 3....");

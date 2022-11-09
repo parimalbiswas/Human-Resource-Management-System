@@ -2,12 +2,13 @@ package com.usecase;
 
 import java.util.Scanner;
 
+import com.model.Employee;
 import com.welcomScreen.WelcomeScreen;
 
 public class UpdateProfile_usecase_EMP
 {
 
-	public static void updateProfile_usecaseX()
+	public static void updateProfile_usecaseX(Employee employee)
 	{
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("If You want to view your Profile Enter CORRECT EID");
