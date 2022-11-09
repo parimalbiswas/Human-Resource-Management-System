@@ -2,8 +2,8 @@ package com.model;
 
 public class Department
 {
-	int did;
-	String dname;
+	private int did;
+	private String dname;
 
 	public Department(int did, String dname)
 	{

@@ -3,9 +3,9 @@ package com.model;
 public class LeaveDetail
 {
 
-	int eid;
-	String dateofleave;
-	String adminapprove;
+	private int eid;
+	private String dateofleave;
+	private String adminapprove;
 
 	public LeaveDetail(int eid, String dateofleave, String adminapprove)
 	{

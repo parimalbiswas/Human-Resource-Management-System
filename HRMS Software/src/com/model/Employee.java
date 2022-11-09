@@ -2,12 +2,12 @@ package com.model;
 
 public class Employee
 {
-	int eid;
-	String ename;
-	String address;
-	String mobile;
-	String password;
-	String dname;
+	private int eid;
+	private String ename;
+	private String address;
+	private String mobile;
+	private String password;
+	private String dname;
 
 	public Employee(int eid, String ename, String address, String mobile, String password, String dname)
 	{
