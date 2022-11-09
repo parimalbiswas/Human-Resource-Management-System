@@ -12,7 +12,7 @@ public class UserVerificationDone
 //		System.out.println(employee);
 		Scanner scanner = new Scanner(System.in);
 
-		System.out.println("Verified >>>>  WELCOME TO EMPLOYEE MANAGEMENT PANEL");
+		System.out.println("Verified >>>>  WELCOME TO EMPLOYEE MANAGEMENT PANEL : " + employee.getEname());
 
 		System.out.println("1. Press 1 to view Profile ");
 		System.out.println("2. Press 2 to update Profile ");
