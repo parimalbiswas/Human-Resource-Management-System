@@ -6,7 +6,7 @@ import com.dao.EmployeeDao;
 import com.dao.EmployeeDaoImpl;
 import com.exception.EmployeeException;
 import com.model.Employee;
-import com.usecase_emp.AdminVerificationDone;
+import com.usecase_admin.AdminVerificationDone;
 import com.usecase_emp.UserVerificationDone;
 
 public class WelcomeScreen
@@ -29,10 +29,10 @@ public class WelcomeScreen
 
 		if (choise == 1)
 		{
-			System.out.println("Enter Employee Name");
+			System.out.println("Enter Admin userName");
 			String username = scanner.next();
 
-			System.out.println("Enter Password");
+			System.out.println("Enter admin Password");
 			String password = scanner.next();
 
 			if (username.equalsIgnoreCase("ADMIN") && password.equalsIgnoreCase("ADMIN"))

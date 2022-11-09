@@ -6,7 +6,6 @@ import com.dao.AdminDao;
 import com.dao.AdminDaoImpl;
 import com.exception.EmployeeException;
 import com.model.Employee;
-import com.usecase_emp.AdminVerificationDone;
 import com.welcomScreen.WelcomeScreen;
 
 public class RegisterNewEmployee_usecase_ADMIN

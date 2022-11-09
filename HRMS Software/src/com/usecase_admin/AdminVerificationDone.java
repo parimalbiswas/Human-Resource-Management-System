@@ -1,8 +1,7 @@
-package com.usecase_emp;
+package com.usecase_admin;
 
 import java.util.Scanner;
 
-import com.usecase_admin.RegisterNewEmployee_usecase_ADMIN;
 import com.welcomScreen.WelcomeScreen;
 
 public class AdminVerificationDone
