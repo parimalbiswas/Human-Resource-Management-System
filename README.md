@@ -1,6 +1,6 @@
 <center>
 <h1 align="center">Human Resource Management System</h1>
-<img src='https://miro.medium.com/max/640/1*FVSOEimre8H3Tyt32INrYQ.png' alt='banner' />
+<h1 align="center"><img src='https://miro.medium.com/max/640/1*FVSOEimre8H3Tyt32INrYQ.png' alt='banner' /></h1>
   
   
   
