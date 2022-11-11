@@ -7,7 +7,7 @@
   
   
   <h1 align="center"><img src='https://miro.medium.com/max/640/1*3jrIBD_pLZKzZFzPxDfISA.png' alt='banner' /></h1>
-  <h1 align="center"><img src='https://miro.medium.com/max/640/1*FVSOEimre8H3Tyt32INrYQ.png' alt='banner' /></h1>
+ 
   <h1 align="center"><img src='https://miro.medium.com/max/640/1*MqkovNbTXO9rHMJ_PYZw_w.png' alt='banner' /></h1>
   
   <h1 align="center"><img src='https://miro.medium.com/max/640/1*YI7cds3qBtC2lS0M7dX7hQ.png' alt='banner' /></h1>
