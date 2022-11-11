@@ -57,6 +57,7 @@ public class AdminVerificationDone
 			break;
 
 		case 7:
+			System.out.println("You Pressed 7....");
 			WelcomeScreen.control();
 			break;
 

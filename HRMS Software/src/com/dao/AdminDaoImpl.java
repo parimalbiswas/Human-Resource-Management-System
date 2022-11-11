@@ -29,7 +29,7 @@ public class AdminDaoImpl implements AdminDao
 			ps1.setString(2, employee.getEname());
 			ps1.setString(3, employee.getAddress());
 			ps1.setString(4, employee.getMobile());
-			ps1.setString(5, employee.getEname());
+			ps1.setString(5, employee.getPassword());
 			ps1.setString(6, employee.getDname());
 			int x = ps1.executeUpdate();
 
