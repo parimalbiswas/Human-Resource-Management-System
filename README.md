@@ -13,8 +13,7 @@
   <h1 align="center"><img src='https://miro.medium.com/max/640/1*YI7cds3qBtC2lS0M7dX7hQ.png' alt='banner' /></h1>
   <h1 align="center"><img src='https://miro.medium.com/max/640/1*8k8-h5eSPDcUj5tE3o2k3A.png' alt='banner' /></h1>
   
-  <h1 align="center"><img src='https://miro.medium.com/max/640/1*8k8-h5eSPDcUj5tE3o2k3A.png' alt='banner' /></h1>
-  <h1 align="center"><img src='https://miro.medium.com/max/640/1*8k8-h5eSPDcUj5tE3o2k3A.png' alt='banner' /></h1>
+  
   <h1 align="center"><img src='https://miro.medium.com/max/640/1*kv6IwzX0rWgYayYXivL_CQ.png' alt='banner' /></h1>
   <h1 align="center"><img src='https://miro.medium.com/max/640/1*lkxbstM94Iys7ApHW8eBLA.png' alt='banner' /></h1>
   <h1 align="center"><img src='https://miro.medium.com/max/640/1*BVfXDGzZ2l6qawPK5CdJBw.png' alt='banner' /></h1>
